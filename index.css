@@ -211,13 +211,8 @@ body{
 #profile_img {
     width:180px;
     height:180px;
-    min-width:180px;
-    min-height:180px;
-    max-width:180px;
-    max-height:180px;
     border-radius:5px;
     background-size:cover !important;
-    background-repeat:no-repeat !important;
 }
 
 #profile div {
@@ -243,16 +238,6 @@ body{
 #about {
     font-size:18px;
     font-family: 'Questrial', sans-serif;
-}
-
-#about a {
-    color:#fff !important;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-#about a:hover {
-    text-decoration:underline;
 }
 
 #about span {
@@ -302,7 +287,6 @@ body{
     font-size:24px;
     font-weight:bold;
     margin:1vh 0px;
-    padding:0px 1px;
     word-wrap: break-word;
 }
 
@@ -398,10 +382,6 @@ body{
     #profile_img {
         width:120px;
         height:120px;
-        min-width:120px;
-        min-height:120px;
-        max-width:120px;
-        max-height:120px;
         margin:0px auto !important;
     }
     #work {
@@ -453,4 +433,34 @@ body{
 
 ::-webkit-scrollbar {width:5px;height:5px;}
 ::-webkit-scrollbar-track {background:var(--bg-color);}
-::-webkit-scrollbar-thumb {background:var(--text-color);}
+::-webkit-scrollbar-thumb {background:var(--text-color);}:root {
+  --bg-color: rgb(10, 10, 10);
+  --text-color: #fff;
+  --blog-gray-color: rgb(180, 180, 180);
+  --background-image: linear-gradient(90deg, rgba(10, 10, 10, 0.6), rgb(10, 10, 10, 1)), url("https://images.unsplash.com/photo-1547138666-12a241be3c2d?w&#x3D;1300");
+  --background-background: linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.6)),
+    url("") center center fixed;
+  --height: 50vh;
+}
+#display h1 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #fff;
+}
+#blog-display h1 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #fff;
+}
+.projects section {
+  background: rgb(20, 20, 20);
+}
+#blog_section section {
+  background: rgb(20, 20, 20);
+}
+@media (max-width: 800px) {
+  :root {
+    --background-image: linear-gradient(0deg, rgba(10, 10, 10, 1), rgb(10, 10, 10, 0)),
+    url("") !important;
+  }
+}
